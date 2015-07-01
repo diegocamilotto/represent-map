@@ -6,15 +6,6 @@ include_once "header.php";
 <!DOCTYPE html>
 <html>
   <head>
-    <!--
-    This site was based on the Represent.LA project by:
-    - Alex Benzer (@abenzer)
-    - Tara Tiger Brown (@tara)
-    - Sean Bonner (@seanbonner)
-
-    Create a map for your startup community!
-    https://github.com/abenzer/represent-map
-    -->
     <title><?= $title_tag ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta charset="UTF-8">
@@ -403,15 +394,16 @@ include_once "header.php";
             </a>
           </div>
           <div class="buttons">
-            <a href="#modal_info" class="btn btn-large btn-info" data-toggle="modal"><i class="icon-info-sign icon-white"></i>About this Map</a>
+            <a href="#modal_info" class="btn btn-large btn-info" data-toggle="modal"><i class="icon-info-sign icon-white"></i>Sobre o Ecosistema</a>
             <?php if($sg_enabled) { ?>
-              <a href="#modal_add_choose" class="btn btn-large btn-success" data-toggle="modal"><i class="icon-plus-sign icon-white"></i>Add Something</a>
+              <a href="#modal_add_choose" class="btn btn-large btn-success" data-toggle="modal"><i class="icon-plus-sign icon-white"></i>Adicionar ao mapa</a>
             <? } else { ?>
-              <a href="#modal_add" class="btn btn-large btn-success" data-toggle="modal"><i class="icon-plus-sign icon-white"></i>Add Something</a>
+              <a href="#modal_add" class="btn btn-large btn-success" data-toggle="modal"><i class="icon-plus-sign icon-white"></i>Adicionar ao mapa</a>
             <? } ?>
+			  <a href="#" class="btn btn-large btn-danger" data-toggle="modal"><i class="icon-plus-sign icon-white"></i>Vagas na região</a>
           </div>
           <div class="search">
-            <input type="text" name="search" id="search" placeholder="Search for companies..." data-provide="typeahead" autocomplete="off" />
+            <input type="text" name="search" id="search" placeholder="Procurar..." data-provide="typeahead" autocomplete="off" />
           </div>
         </div>
       </div>
@@ -423,15 +415,15 @@ include_once "header.php";
         <?php
           $types = Array(
               Array('startup', 'Startups'),
-              Array('accelerator','Accelerators'),
-              Array('incubator', 'Incubators'),
+              Array('accelerator','Aceleradoras'),
+              Array('incubator', 'Incubadora'),
               Array('coworking', 'Coworking'),
-              Array('investor', 'Investors'),
-              Array('service', 'Consulting'),
-              Array('hackerspace', 'Hackerspaces')
+              Array('investor', 'Investidores'),
+              Array('service', 'Empresas'),
+              Array('hackerspace', 'Hotel tecnologico')
               );
           if($show_events == true) {
-            $types[] = Array('event', 'Events');
+            $types[] = Array('event', 'Eventos');
           }
           $marker_id = 0;
           foreach($types as $type) {
@@ -475,49 +467,27 @@ include_once "header.php";
     <div class="modal hide" id="modal_info">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">×</button>
-        <h3>About this Map</h3>
+        <h3>Sobre este mapa</h3>
       </div>
       <div class="modal-body">
         <p>
-          We built this map to connect and promote the tech startup community
-          in our beloved Los Angeles. We've seeded the map but we need
-          your help to keep it fresh. If you don't see your company, please
+          Nós construímos este mapa para se conectar e promover a comunidade empreendedora e tecnologica na Região Sudoeste do Paraná. Nós populamos o mapa com a ajuda das entidades que fomentam o ecosistema, mas nós precisamos de
+sua ajuda para mantê-lo sempre atualizado, se você não ver a sua empresa, por favor
           <?php if($sg_enabled) { ?>
-            <a href="#modal_add_choose" data-toggle="modal" data-dismiss="modal">submit it here</a>.
+            <a href="#modal_add_choose" data-toggle="modal" data-dismiss="modal">Adicione aqui</a>.
           <?php } else { ?>
-            <a href="#modal_add" data-toggle="modal" data-dismiss="modal">submit it here</a>.
+            <a href="#modal_add" data-toggle="modal" data-dismiss="modal">Adicione aqui</a>.
           <?php } ?>
-          Let's put LA on the map together!
+          Vamos colocar o sudoeste do Paraná no mapa do empreendedorismo e da alta tecnologia!
         </p>
         <p>
-        Questions? Feedback? Connect with us: <a href="http://www.twitter.com/<?= $twitter['username'] ?>" target="_blank">@<?= $twitter['username'] ?></a>
+       Perguntas? Feedback? Encontre-nos: 
         </p>
-        <p>
-          If you want to support the LA community by linking to this map from your website,
-          here are some badges you might like to use. You can also grab the <a href="./images/badges/LA-icon.ai">LA icon AI file</a>.
-        </p>
-        <ul class="badges">
-          <li>
-            <img src="./images/badges/badge1.png" alt="">
-          </li>
-          <li>
-            <img src="./images/badges/badge1_small.png" alt="">
-          </li>
-          <li>
-            <img src="./images/badges/badge2.png" alt="">
-          </li>
-          <li>
-            <img src="./images/badges/badge2_small.png" alt="">
-          </li>
-        </ul>
-        <p>
-          This map was built with <a href="https://github.com/abenzer/represent-map">RepresentMap</a> - an open source project we started
-          to help startup communities around the world create their own maps.
-          Check out some <a target="_blank" href="http://www.representmap.com">startup maps</a> built by other communities!
-        </p>
+              
+       
       </div>
       <div class="modal-footer">
-        <a href="#" class="btn" data-dismiss="modal" style="float: right;">Close</a>
+        <a href="#" class="btn" data-dismiss="modal" style="float: right;">Fechar</a>
       </div>
     </div>
 
@@ -527,50 +497,50 @@ include_once "header.php";
       <form action="add.php" id="modal_addform" class="form-horizontal">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">×</button>
-          <h3>Add something!</h3>
+          <h3>Adicione algo!</h3>
         </div>
         <div class="modal-body">
           <div id="result"></div>
           <fieldset>
             <div class="control-group">
-              <label class="control-label" for="add_owner_name">Your Name</label>
+              <label class="control-label" for="add_owner_name">Seu nome</label>
               <div class="controls">
                 <input type="text" class="input-xlarge" name="owner_name" id="add_owner_name" maxlength="100">
               </div>
             </div>
             <div class="control-group">
-              <label class="control-label" for="add_owner_email">Your Email</label>
+              <label class="control-label" for="add_owner_email">Seu Email</label>
               <div class="controls">
                 <input type="text" class="input-xlarge" name="owner_email" id="add_owner_email" maxlength="100">
               </div>
             </div>
             <div class="control-group">
-              <label class="control-label" for="add_title">Company Name</label>
+              <label class="control-label" for="add_title">Nome da Empresa</label>
               <div class="controls">
                 <input type="text" class="input-xlarge" name="title" id="add_title" maxlength="100" autocomplete="off">
               </div>
             </div>
             <div class="control-group">
-              <label class="control-label" for="input01">Company Type</label>
+              <label class="control-label" for="input01">Tipo da Empresa</label>
               <div class="controls">
                 <select name="type" id="add_type" class="input-xlarge">
                   <option value="startup">Startup</option>
-                  <option value="accelerator">Accelerator</option>
-                  <option value="incubator">Incubator</option>
+                  <option value="accelerator">Aceleradora</option>
+                  <option value="incubator">Incubatora</option>
                   <option value="coworking">Coworking</option>
-                  <option value="investor">VC/Angel</option>
-                  <option value="service">Consulting Firm</option>
-                  <option value="hackerspace">Hackerspace</option>
+                  <option value="investor">Investidores</option>
+                  <option value="service">Empresas</option>
+                  <option value="hackerspace">Hotel tecnologico</option>
                 </select>
               </div>
             </div>
             <div class="control-group">
-              <label class="control-label" for="add_address">Address</label>
+              <label class="control-label" for="add_address">Endereço</label>
               <div class="controls">
                 <input type="text" class="input-xlarge" name="address" id="add_address">
                 <p class="help-block">
-                  Should be your <b>full street address (including city and zip)</b>.
-                  If it works on Google Maps, it will work here.
+                 Deve ser seu <b> endereço completo (incluindo cidade e codigo postal)</ b>.
+                   Teste no Google maps, se ele funciona lá, certamente vai funcionar aqui ;)
                 </p>
               </div>
             </div>
@@ -579,24 +549,24 @@ include_once "header.php";
               <div class="controls">
                 <input type="text" class="input-xlarge" id="add_uri" name="uri" placeholder="http://">
                 <p class="help-block">
-                  Should be your full URL with no trailing slash, e.g. "http://www.yoursite.com"
+                  Deve ser o seu URL completo sem barra no final, por exemplo, "http://www.seusite.com"
                 </p>
               </div>
             </div>
             <div class="control-group">
-              <label class="control-label" for="add_description">Description</label>
+              <label class="control-label" for="add_description">Descrição</label>
               <div class="controls">
                 <input type="text" class="input-xlarge" id="add_description" name="description" maxlength="150">
                 <p class="help-block">
-                  Brief, concise description. What's your product? What problem do you solve? Max 150 chars.
+                  Breve descrição. Qual é o seu produto? Que problema você resolve? Max 150 caracteres.
                 </p>
               </div>
             </div>
           </fieldset>
         </div>
         <div class="modal-footer">
-          <button type="submit" class="btn btn-primary">Submit for Review</button>
-          <a href="#" class="btn" data-dismiss="modal" style="float: right;">Close</a>
+          <button type="submit" class="btn btn-primary">Enviar para avaliação</button>
+          <a href="#" class="btn" data-dismiss="modal" style="float: right;">Fechar</a>
         </div>
       </form>
     </div>
@@ -638,41 +608,7 @@ include_once "header.php";
       });
     </script>
 
-    <!-- startup genome modal -->
-    <div class="modal hide" id="modal_add_choose">
-      <form action="add.php" id="modal_addform_choose" class="form-horizontal">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">×</button>
-          <h3>Add something!</h3>
-        </div>
-        <div class="modal-body">
-          <p>
-            Want to add your company to this map? There are two easy ways to do that.
-          </p>
-          <ul>
-            <li>
-              <em>Option #1: Add your company to Startup Genome</em>
-              <div>
-                Our map pulls its data from <a href="http://www.startupgenome.com">Startup Genome</a>.
-                When you add your company to Startup Genome, it will appear on this map after it has been approved.
-                You will be able to change your company's information anytime you want from the Startup Genome website.
-              </div>
-              <br />
-              <a href="http://www.startupgenome.com" target="_blank" class="btn btn-info">Sign in to Startup Genome</a>
-            </li>
-            <li>
-              <em>Option #2: Add your company manually</em>
-              <div>
-                If you don't want to sign up for Startup Genome, you can still add your company to this map.
-                We will review your submission as soon as possible.
-              </div>
-              <br />
-          <a href="#modal_add" target="_blank" class="btn btn-info" data-toggle="modal" data-dismiss="modal">Submit your company manually</a>
-            </li>
-          </ul>
-        </div>
-      </form>
-    </div>
+    
 
   </body>
 </html>
