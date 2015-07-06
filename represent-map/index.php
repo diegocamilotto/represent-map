@@ -400,7 +400,7 @@ include_once "header.php";
             <? } else { ?>
               <a href="#modal_add" class="btn btn-large btn-success" data-toggle="modal"><i class="icon-plus-sign icon-white"></i>Adicionar ao mapa</a>
             <? } ?>
-			  <a href="#" class="btn btn-large btn-danger" data-toggle="modal"><i class="icon-plus-sign icon-white"></i>Vagas na região</a>
+			  <a href="#" class="btn btn-large btn-danger" data-toggle="modal"><i class="icon-plus-sign icon-white"></i>Comprar/Vender</a>
           </div>
           <div class="search">
             <input type="text" name="search" id="search" placeholder="Procurar..." data-provide="typeahead" autocomplete="off" />
@@ -471,17 +471,17 @@ include_once "header.php";
       </div>
       <div class="modal-body">
         <p>
-          Nós construímos este mapa para se conectar e promover a comunidade empreendedora e tecnologica na Região Sudoeste do Paraná. Nós populamos o mapa com a ajuda das entidades que fomentam o ecosistema, mas nós precisamos de
-sua ajuda para mantê-lo sempre atualizado, se você não ver a sua empresa, por favor
+          Nós construímos este mapa para se conectar e promover a comunidade de criadores. Nós populamos o mapa com a ajuda das entidades que fomentam o ecosistema, mas nós precisamos de
+sua ajuda para mantê-lo sempre atualizado, se você não encontrar a sua empresa, por favor
           <?php if($sg_enabled) { ?>
             <a href="#modal_add_choose" data-toggle="modal" data-dismiss="modal">Adicione aqui</a>.
           <?php } else { ?>
             <a href="#modal_add" data-toggle="modal" data-dismiss="modal">Adicione aqui</a>.
           <?php } ?>
-          Vamos colocar o sudoeste do Paraná no mapa do empreendedorismo e da alta tecnologia!
+          Vamos promover a conectividade da comunidade de criadores!
         </p>
         <p>
-       Perguntas? Feedback? Encontre-nos: 
+       Perguntas? Feedback? Fale conosco: <a href='http://www.farmin.com.br' target='_blank'>Farmin</a> 
         </p>
               
        
@@ -497,7 +497,7 @@ sua ajuda para mantê-lo sempre atualizado, se você não ver a sua empresa, por
       <form action="add.php" id="modal_addform" class="form-horizontal">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">×</button>
-          <h3>Adicione algo!</h3>
+          <h3>Informe seus dados para colocar-mos você no mapa!</h3>
         </div>
         <div class="modal-body">
           <div id="result"></div>
@@ -515,13 +515,13 @@ sua ajuda para mantê-lo sempre atualizado, se você não ver a sua empresa, por
               </div>
             </div>
             <div class="control-group">
-              <label class="control-label" for="add_title">Nome da Empresa</label>
+              <label class="control-label" for="add_title">Nome da Empresa/Propriedade</label>
               <div class="controls">
                 <input type="text" class="input-xlarge" name="title" id="add_title" maxlength="100" autocomplete="off">
               </div>
             </div>
             <div class="control-group">
-              <label class="control-label" for="input01">Tipo da Empresa</label>
+              <label class="control-label" for="input01">Raça</label>
               <div class="controls">
                 <select name="type" id="add_type" class="input-xlarge">
                   <option value="startup">Startup</option>
@@ -558,7 +558,7 @@ sua ajuda para mantê-lo sempre atualizado, se você não ver a sua empresa, por
               <div class="controls">
                 <input type="text" class="input-xlarge" id="add_description" name="description" maxlength="150">
                 <p class="help-block">
-                  Breve descrição. Qual é o seu produto? Que problema você resolve? Max 150 caracteres.
+                  Olá, conte-nos um pouco mais sobre você. Quais raças você cria? Qual o tamanho do seu rebanho? Você tem página no facebook?  Max 150 caracteres.
                 </p>
               </div>
             </div>
@@ -592,7 +592,7 @@ sua ajuda para mantê-lo sempre atualizado, se você não ver a sua empresa, por
 
             // if submission was successful, show info alert
             if(data == "success") {
-              $("#modal_addform #result").html("We've received your submission and will review it shortly. Thanks!");
+              $("#modal_addform #result").html("Nós recebemos o seu cadastro e vamos colocar você no mapa o quanto antes. Obrigado!");
               $("#modal_addform #result").addClass("alert alert-info");
               $("#modal_addform p").css("display", "none");
               $("#modal_addform fieldset").css("display", "none");

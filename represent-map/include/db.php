@@ -89,7 +89,7 @@ $show_events = true;
 $head_html = "";
 
 // The <title></title> tag
-$title_tag = "Digital Valley - Ecosistema tecnologico do sudoeste do Paraná";
+$title_tag = "Agronegócio - Ecosistema criadores do Brasil";
 
 // The latitude & longitude to center the initial map
 $lat_lng = "-25.9869751,-52.8548848,10";
@@ -99,17 +99,17 @@ $domain = "http://www.represent.la";
 
 // Twitter username and default share text
 $twitter = array(
-  "share_text" => "Acabo de entrar pro mapa de empreendedorismo do sudoeste do Paraná:",
-  "username" => "representla"
+  "share_text" => "Acabo de entrar para o mapa de criadores do Brasil:",
+  "username" => "farminoficial"
 );
 
 // Short blurb about this site (visible to visitors)
-$blurb = "Este mapa tem o objetivo de promover e conectar a comunidade empreendedora do sudoeste do Paraná - faça parte você tambem!";
+$blurb = "Este mapa tem o objetivo de promover e conectar a comunidade de criadores do Brasil - faça parte você também!";
 
 // attribution (must leave link intact, per our license)
 $attribution = "
   <span>
-    Baseado em <a href='http://www.represent.la' target='_blank'>RepresentLA</a> fornecido por <a href='http://www.previseme.com' target='_blank'>Previseme</a> apoiado por <a href='http://www.sudotec.org.br' target='_blank'>Sudotec incubadora tecnologica</a> e <a href='http://www.sebrae.com.br' target='_blank'>SEBRAE Pato Branco</a>
+    Baseado em <a href='http://www.represent.la' target='_blank'>RepresentLA</a> fornecido por <a href='http://www.farmin.com.br' target='_blank'>Farmin</a> apoiado por <a href='http://www.sudotec.org.br' target='_blank'>Sudotec incubadora tecnológica</a>
   </span>
 ";
 
