@@ -158,14 +158,86 @@ include_once "header.php";
         markers = new Array();
         <?php
           $types = Array(
-              Array('startup', 'Startups'),
-              Array('accelerator','Accelerators'),
-              Array('incubator', 'Incubators'),
-              Array('coworking', 'Coworking'),
-              Array('investor', 'Investors'),
-              Array('service', 'Consulting'),
-              Array('hackerspace', 'Hackerspaces'),
-              Array('event', 'Events'),
+              Array('aberdeen-angus', 'Bovino - Aberdeen Angus', 'bovino'),
+              Array('ankole-watusi', 'Bovino - Ankole-Watusi', 'bovino'),
+              Array('belted-galloway', 'Bovino - Belted Galloway', 'bovino'),
+              Array('bonsmara', 'Bovino - Bonsmara', 'bovino'),
+              Array('brahman', 'Bovino - Brahman', 'bovino'),
+              Array('brangus', 'Bovino - Brangus', 'bovino'),
+              Array('brown-swiss', 'Bovino - Brown Swiss', 'bovino'),
+              Array('caracu', 'Bovino - Caracu', 'bovino'),
+              Array('charoles', 'Bovino - Charoles', 'bovino'),
+              Array('devon', 'Bovino - Devon', 'bovino'),
+              Array('gir-mocha', 'Bovino - Gir Mocha', 'bovino'),
+              Array('hereford', 'Bovino - Hereford', 'bovino'),
+              Array('holstein-frisia', 'Bovino - Holstein-Frisia', 'bovino'),
+              Array('jersey', 'Bovino - Jersey', 'bovino'),
+              Array('limousin', 'Bovino - Limousin', 'bovino'),
+              Array('marchigiana', 'Bovino - Marchigiana', 'bovino'),
+              Array('nelore', 'Bovino - Nelore', 'bovino'),
+              Array('red-angus', 'Bovino - Red Angus', 'bovino'),
+              Array('senepol', 'Bovino - Senepol', 'bovino'),
+              Array('shorthorn', 'Bovino - Shorthorn', 'bovino'),
+              Array('simental', 'Bovino - Simental', 'bovino'),
+              Array('africana', 'Ovino - Africana', 'ovino'),
+              Array('assaf', 'Ovino - Assaf', 'ovino'),
+              Array('barbados-blackbelly', 'Ovino - Barbados Blackbelly', 'ovino'),
+              Array('bergamacia', 'Ovino - Bergamácia', 'ovino'),
+              Array('brazilian-somali', 'Ovino - Brazilian Somali', 'ovino'),
+              Array('cabeca-preta-persa', 'Ovino - Cabeça Preta Persa', 'ovino'),
+              Array('cara-preta-lituana', 'Ovino - Cara Preta Lituana', 'ovino'),
+              Array('columbia', 'Ovino - Columbia', 'ovino'),
+              Array('coopworth', 'Ovino - Coopworth', 'ovino'),
+              Array('corriedale', 'Ovino - Corriedale', 'ovino'),
+              Array('damara', 'Ovino - Damara', 'ovino'),
+              Array('dorper', 'Ovino - Dorper', 'ovino'),
+              Array('dorset', 'Ovino - Dorset', 'ovino'),
+              Array('east-friesian', 'Ovino - East Friesian', 'ovino'),
+              Array('finnsheep', 'Ovino - Finnsheep', 'ovino'),
+              Array('guaipecas-brasiliensis', 'Ovino - Guaipecas Brasiliensis', 'ovino'),
+              Array('hampshire', 'Ovino - Hampshire', 'ovino'),
+              Array('icelandic', 'Ovino - Icelandic', 'ovino'),
+              Array('ile-de-france', 'Ovino - Ile de France', 'ovino'),
+              Array('katahdin', 'Ovino - Katahdin', 'ovino'),
+              Array('lacaune', 'Ovino - Lacaune', 'ovino'),
+              Array('lincoln', 'Ovino - Lincoln', 'ovino'),
+              Array('masai', 'Ovino - Masai', 'ovino'),
+              Array('merino', 'Ovino - Merino', 'ovino'),
+              Array('morada-nova', 'Ovino - Morada Nova', 'ovino'),
+              Array('pelibuey', 'Ovino - Pelibuey', 'ovino'),
+              Array('polypay', 'Ovino - Polypay', 'ovino'),
+              Array('rabo-largo', 'Ovino - Rabo Largo', 'ovino'),
+              Array('rambouillet', 'Ovino - Rambouillet', 'ovino'),
+              Array('romney', 'Ovino - Romney', 'ovino'),
+              Array('royal-white', 'Ovino - Royal White', 'ovino'),
+              Array('sahel-type', 'Ovino - Sahel-type', 'ovino'),
+              Array('santa-ines', 'Ovino - Santa Inês', 'ovino'),
+              Array('soay', 'Ovino - Soay', 'ovino'),
+              Array('somali', 'Ovino - Somali', 'ovino'),
+              Array('southdown', 'Ovino - Southdown', 'ovino'),
+              Array('st-croix', 'Ovino - St. Croix', 'ovino'),
+              Array('suffolk', 'Ovino - Suffolk', 'ovino'),
+              Array('texel', 'Ovino - Texel', 'ovino'),
+              Array('touabire', 'Ovino - Touabire', 'ovino'),
+              Array('uda', 'Ovino - Uda', 'ovino'),
+              Array('west-african-dwarf', 'Ovino - West African Dwarf', 'ovino'),
+              Array('alpina', 'Caprino - Alpina', 'caprino'), 
+              Array('anglo-nubiana', 'Caprino - Anglo-nubiana', 'caprino'), 
+              Array('angora', 'Caprino - Angorá', 'caprino'), 
+              Array('bhuj', 'Caprino - Bhuj', 'caprino'), 
+              Array('boer', 'Caprino - Boer', 'caprino'), 
+              Array('caninde', 'Caprino - Canindé', 'caprino'), 
+              Array('jamnapari', 'Caprino - Jamnapari', 'caprino'), 
+              Array('la-mancha-americana', 'Caprino - La Mancha Americana', 'caprino'), 
+              Array('mambrina', 'Caprino - Mambrina', 'caprino'), 
+              Array('marota', 'Caprino - Marota', 'caprino'), 
+              Array('moxoto', 'Caprino - Moxotó', 'caprino'), 
+              Array('murciana', 'Caprino - Murciana', 'caprino'), 
+              Array('nubiana', 'Caprino - Nubiana', 'caprino'), 
+              Array('repartida', 'Caprino - Repartida', 'caprino'), 
+              Array('saanen', 'Caprino - Saanen', 'caprino'), 
+              Array('toggenburg', 'Caprino - Toggenburg', 'caprino'),
+              Array('event', 'Eventos', 'event'),
               );
           $marker_id = 0;
           foreach($types as $type) {
@@ -177,7 +249,7 @@ include_once "header.php";
               $place[uri] = addslashes(htmlspecialchars($place[uri]));
               $place[address] = htmlspecialchars_decode(addslashes(htmlspecialchars($place[address])));
               echo "
-                markers.push(['".$place[title]."', '".$place[type]."', '".$place[lat]."', '".$place[lng]."', '".$place[description]."', '".$place[uri]."', '".$place[address]."']);
+                markers.push(['".$place[title]."', '".$place[type]."', '".$place[lat]."', '".$place[lng]."', '".$place[description]."', '".$place[uri]."', '".$place[address]."', '".$type[2]."']);
                 markerTitles[".$marker_id."] = '".$place[title]."';
               ";
               $count[$place[type]]++;
@@ -224,7 +296,7 @@ include_once "header.php";
           }
 
           // build this marker
-          var markerImage = new google.maps.MarkerImage("./images/icons/"+val[1]+".png", null, null, null, iconSize);
+          var markerImage = new google.maps.MarkerImage("./images/icons/"+val[7]+".png", null, null, null, iconSize);
           var marker = new google.maps.Marker({
             position: new google.maps.LatLng(val[2],val[3]),
             map: map,
@@ -414,16 +486,88 @@ include_once "header.php";
       <ul class="list" id="list">
         <?php
           $types = Array(
-              Array('startup', 'Startups'),
-              Array('accelerator','Aceleradoras'),
-              Array('incubator', 'Incubadora'),
-              Array('coworking', 'Coworking'),
-              Array('investor', 'Investidores'),
-              Array('service', 'Empresas'),
-              Array('hackerspace', 'Hotel tecnologico')
+              Array('aberdeen-angus', 'Bovino - Aberdeen Angus', 'bovino'),
+              Array('ankole-watusi', 'Bovino - Ankole-Watusi', 'bovino'),
+              Array('belted-galloway', 'Bovino - Belted Galloway', 'bovino'),
+              Array('bonsmara', 'Bovino - Bonsmara', 'bovino'),
+              Array('brahman', 'Bovino - Brahman', 'bovino'),
+              Array('brangus', 'Bovino - Brangus', 'bovino'),
+              Array('brown-swiss', 'Bovino - Brown Swiss', 'bovino'),
+              Array('caracu', 'Bovino - Caracu', 'bovino'),
+              Array('charoles', 'Bovino - Charoles', 'bovino'),
+              Array('devon', 'Bovino - Devon', 'bovino'),
+              Array('gir-mocha', 'Bovino - Gir Mocha', 'bovino'),
+              Array('hereford', 'Bovino - Hereford', 'bovino'),
+              Array('holstein-frisia', 'Bovino - Holstein-Frisia', 'bovino'),
+              Array('jersey', 'Bovino - Jersey', 'bovino'),
+              Array('limousin', 'Bovino - Limousin', 'bovino'),
+              Array('marchigiana', 'Bovino - Marchigiana', 'bovino'),
+              Array('nelore', 'Bovino - Nelore', 'bovino'),
+              Array('red-angus', 'Bovino - Red Angus', 'bovino'),
+              Array('senepol', 'Bovino - Senepol', 'bovino'),
+              Array('shorthorn', 'Bovino - Shorthorn', 'bovino'),
+              Array('simental', 'Bovino - Simental', 'bovino'),
+              Array('africana', 'Ovino - Africana', 'ovino'),
+              Array('assaf', 'Ovino - Assaf', 'ovino'),
+              Array('barbados-blackbelly', 'Ovino - Barbados Blackbelly', 'ovino'),
+              Array('bergamacia', 'Ovino - Bergamácia', 'ovino'),
+              Array('brazilian-somali', 'Ovino - Brazilian Somali', 'ovino'),
+              Array('cabeca-preta-persa', 'Ovino - Cabeça Preta Persa', 'ovino'),
+              Array('cara-preta-lituana', 'Ovino - Cara Preta Lituana', 'ovino'),
+              Array('columbia', 'Ovino - Columbia', 'ovino'),
+              Array('coopworth', 'Ovino - Coopworth', 'ovino'),
+              Array('corriedale', 'Ovino - Corriedale', 'ovino'),
+              Array('damara', 'Ovino - Damara', 'ovino'),
+              Array('dorper', 'Ovino - Dorper', 'ovino'),
+              Array('dorset', 'Ovino - Dorset', 'ovino'),
+              Array('east-friesian', 'Ovino - East Friesian', 'ovino'),
+              Array('finnsheep', 'Ovino - Finnsheep', 'ovino'),
+              Array('guaipecas-brasiliensis', 'Ovino - Guaipecas Brasiliensis', 'ovino'),
+              Array('hampshire', 'Ovino - Hampshire', 'ovino'),
+              Array('icelandic', 'Ovino - Icelandic', 'ovino'),
+              Array('ile-de-france', 'Ovino - Ile de France', 'ovino'),
+              Array('katahdin', 'Ovino - Katahdin', 'ovino'),
+              Array('lacaune', 'Ovino - Lacaune', 'ovino'),
+              Array('lincoln', 'Ovino - Lincoln', 'ovino'),
+              Array('masai', 'Ovino - Masai', 'ovino'),
+              Array('merino', 'Ovino - Merino', 'ovino'),
+              Array('morada-nova', 'Ovino - Morada Nova', 'ovino'),
+              Array('pelibuey', 'Ovino - Pelibuey', 'ovino'),
+              Array('polypay', 'Ovino - Polypay', 'ovino'),
+              Array('rabo-largo', 'Ovino - Rabo Largo', 'ovino'),
+              Array('rambouillet', 'Ovino - Rambouillet', 'ovino'),
+              Array('romney', 'Ovino - Romney', 'ovino'),
+              Array('royal-white', 'Ovino - Royal White', 'ovino'),
+              Array('sahel-type', 'Ovino - Sahel-type', 'ovino'),
+              Array('santa-ines', 'Ovino - Santa Inês', 'ovino'),
+              Array('soay', 'Ovino - Soay', 'ovino'),
+              Array('somali', 'Ovino - Somali', 'ovino'),
+              Array('southdown', 'Ovino - Southdown', 'ovino'),
+              Array('st-croix', 'Ovino - St. Croix', 'ovino'),
+              Array('suffolk', 'Ovino - Suffolk', 'ovino'),
+              Array('texel', 'Ovino - Texel', 'ovino'),
+              Array('touabire', 'Ovino - Touabire', 'ovino'),
+              Array('uda', 'Ovino - Uda', 'ovino'),
+              Array('west-african-dwarf', 'Ovino - West African Dwarf', 'ovino'),
+              Array('alpina', 'Caprino - Alpina', 'caprino'), 
+              Array('anglo-nubiana', 'Caprino - Anglo-nubiana', 'caprino'), 
+              Array('angora', 'Caprino - Angorá', 'caprino'), 
+              Array('bhuj', 'Caprino - Bhuj', 'caprino'), 
+              Array('boer', 'Caprino - Boer', 'caprino'), 
+              Array('caninde', 'Caprino - Canindé', 'caprino'), 
+              Array('jamnapari', 'Caprino - Jamnapari', 'caprino'), 
+              Array('la-mancha-americana', 'Caprino - La Mancha Americana', 'caprino'), 
+              Array('mambrina', 'Caprino - Mambrina', 'caprino'), 
+              Array('marota', 'Caprino - Marota', 'caprino'), 
+              Array('moxoto', 'Caprino - Moxotó', 'caprino'), 
+              Array('murciana', 'Caprino - Murciana', 'caprino'), 
+              Array('nubiana', 'Caprino - Nubiana', 'caprino'), 
+              Array('repartida', 'Caprino - Repartida', 'caprino'), 
+              Array('saanen', 'Caprino - Saanen', 'caprino'), 
+              Array('toggenburg', 'Caprino - Toggenburg', 'caprino'),
               );
           if($show_events == true) {
-            $types[] = Array('event', 'Eventos');
+            $types[] = Array('event', 'Eventos', 'event');
           }
           $marker_id = 0;
           foreach($types as $type) {
@@ -437,7 +581,7 @@ include_once "header.php";
               <li class='category'>
                 <div class='category_item'>
                   <div class='category_toggle' onClick=\"toggle('$type[0]')\" id='filter_$type[0]'></div>
-                  <a href='#' onClick=\"toggleList('$type[0]');\" class='category_info'><img src='./images/icons/$type[0].png' alt='' />$type[1]<span class='total'> ($markers_total)</span></a>
+                  <a href='#' onClick=\"toggleList('$type[0]');\" class='category_info'><img src='./images/icons/$type[2].png' alt='' />$type[1]<span class='total'> ($markers_total)</span></a>
                 </div>
                 <ul class='list-items list-$type[0]'>
             ";
@@ -524,13 +668,85 @@ sua ajuda para mantê-lo sempre atualizado, se você não encontrar a sua empres
               <label class="control-label" for="input01">Raça</label>
               <div class="controls">
                 <select name="type" id="add_type" class="input-xlarge">
-                  <option value="startup">Startup</option>
-                  <option value="accelerator">Aceleradora</option>
-                  <option value="incubator">Incubatora</option>
-                  <option value="coworking">Coworking</option>
-                  <option value="investor">Investidores</option>
-                  <option value="service">Empresas</option>
-                  <option value="hackerspace">Hotel tecnologico</option>
+                  <option value="aberdeen-angus">Bovino - Aberdeen Angus</option>
+                  <option value="ankole-watusi">Bovino - Ankole-Watusi</option>
+                  <option value="belted-galloway">Bovino - Belted Galloway</option>
+                  <option value="bonsmara">Bovino - Bonsmara</option>
+                  <option value="brahman">Bovino - Brahman</option>
+                  <option value="brangus">Bovino - Brangus</option>
+                  <option value="brown-swiss">Bovino - Brown Swiss</option>
+                  <option value="caracu">Bovino - Caracu</option>
+                  <option value="charoles">Bovino - Charoles</option>
+                  <option value="devon">Bovino - Devon</option>
+                  <option value="gir-mocha">Bovino - Gir Mocha</option>
+                  <option value="hereford">Bovino - Hereford</option>
+                  <option value="holstein-frisia">Bovino - Holstein-Frisia</option>
+                  <option value="jersey">Bovino - Jersey</option>
+                  <option value="limousin">Bovino - Limousin</option>
+                  <option value="marchigiana">Bovino - Marchigiana</option>
+                  <option value="nelore">Bovino - Nelore</option>
+                  <option value="red-angus">Bovino - Red Angus</option>
+                  <option value="senepol">Bovino - Senepol</option>
+                  <option value="shorthorn">Bovino - Shorthorn</option>
+                  <option value="simental">Bovino - Simental</option>
+                  <option value="africana">Ovino - Africana</option>
+                  <option value="assaf">Ovino - Assaf</option>
+                  <option value="barbados-blackbelly">Ovino - Barbados Blackbelly</option>
+                  <option value="bergamacia">Ovino - Bergamácia</option>
+                  <option value="brazilian-somali">Ovino - Brazilian Somali</option>
+                  <option value="cabeca-preta-persa">Ovino - Cabeça Preta Persa</option>
+                  <option value="cara-preta-lituana">Ovino - Cara Preta Lituana</option>
+                  <option value="columbia">Ovino - Columbia</option>
+                  <option value="coopworth">Ovino - Coopworth</option>
+                  <option value="corriedale">Ovino - Corriedale</option>
+                  <option value="damara">Ovino - Damara</option>
+                  <option value="dorper">Ovino - Dorper</option>
+                  <option value="dorset">Ovino - Dorset</option>
+                  <option value="east-friesian">Ovino - East Friesian</option>
+                  <option value="finnsheep">Ovino - Finnsheep</option>
+                  <option value="guaipecas-brasiliensis">Ovino - Guaipecas Brasiliensis</option>
+                  <option value="hampshire">Ovino - Hampshire</option>
+                  <option value="icelandic">Ovino - Icelandic</option>
+                  <option value="ile-de-france">Ovino - Ile de France</option>
+                  <option value="katahdin">Ovino - Katahdin</option>
+                  <option value="lacaune">Ovino - Lacaune</option>
+                  <option value="lincoln">Ovino - Lincoln</option>
+                  <option value="masai">Ovino - Masai</option>
+                  <option value="merino">Ovino - Merino</option>
+                  <option value="morada-nova">Ovino - Morada Nova</option>
+                  <option value="pelibuey">Ovino - Pelibuey</option>
+                  <option value="polypay">Ovino - Polypay</option>
+                  <option value="rabo-largo">Ovino - Rabo Largo</option>
+                  <option value="rambouillet">Ovino - Rambouillet</option>
+                  <option value="romney">Ovino - Romney</option>
+                  <option value="royal-white">Ovino - Royal White</option>
+                  <option value="sahel-type">Ovino - Sahel-type</option>
+                  <option value="santa-ines">Ovino - Santa Inês</option>
+                  <option value="soay">Ovino - Soay</option>
+                  <option value="somali">Ovino - Somali</option>
+                  <option value="southdown">Ovino - Southdown</option>
+                  <option value="st-croix">Ovino - St. Croix</option>
+                  <option value="suffolk">Ovino - Suffolk</option>
+                  <option value="texel">Ovino - Texel</option>
+                  <option value="touabire">Ovino - Touabire</option>
+                  <option value="uda">Ovino - Uda</option>
+                  <option value="west-african-dwarf">Ovino - West African Dwarf</option>
+                  <option value="alpina">Caprino - Alpina</option> 
+                  <option value="anglo-nubiana">Caprino - Anglo-nubiana</option> 
+                  <option value="angora">Caprino - Angorá</option> 
+                  <option value="bhuj">Caprino - Bhuj</option> 
+                  <option value="boer">Caprino - Boer</option> 
+                  <option value="caninde">Caprino - Canindé</option> 
+                  <option value="jamnapari">Caprino - Jamnapari</option> 
+                  <option value="la-mancha-americana">Caprino - La Mancha Americana</option> 
+                  <option value="mambrina">Caprino - Mambrina</option> 
+                  <option value="marota">Caprino - Marota</option> 
+                  <option value="moxoto">Caprino - Moxotó</option> 
+                  <option value="murciana">Caprino - Murciana</option> 
+                  <option value="nubiana">Caprino - Nubiana</option> 
+                  <option value="repartida">Caprino - Repartida</option> 
+                  <option value="saanen">Caprino - Saanen</option> 
+                  <option value="toggenburg">Caprino - Toggenburg</option>
                 </select>
               </div>
             </div>
