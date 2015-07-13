@@ -60,23 +60,23 @@ if($task == "doedit") {
       <label class="control-label" for="">Type</label>
       <div class="controls">
         <select class="input input-xlarge" name="type">  
-		      <option<? if($place[type] == "aberdeen-angus" {?> selected="selected"<? } ?>>Bovino - Aberdeen Angus</option>
-              <option<? if($place[type] == "ankole-watusi" {?> selected="selected"<? } ?>>Bovino - Ankole-Watusi</option>
-              <option<? if($place[type] == "belted-galloway" {?> selected="selected"<? } ?>>Bovino - Belted Galloway</option>
-              <option<? if($place[type] == "bonsmara" {?> selected="selected"<? } ?>>Bovino - Bonsmara</option>
-              <option<? if($place[type] == "brahman" {?> selected="selected"<? } ?>>Bovino - Brahman</option>
-              <option<? if($place[type] == "brangus" {?> selected="selected"<? } ?>>Bovino - Brangus</option>
-              <option<? if($place[type] == "brown-swiss" {?> selected="selected"<? } ?>>Bovino - Brown Swiss</option>
-              <option<? if($place[type] == "caracu" {?> selected="selected"<? } ?>>Bovino - Caracu</option>
-              <option<? if($place[type] == "charoles" {?> selected="selected"<? } ?>>Bovino - Charoles</option>
-              <option<? if($place[type] == "devon" {?> selected="selected"<? } ?>>Bovino - Devon</option>
-              <option<? if($place[type] == "gir-mocha" {?> selected="selected"<? } ?>>Bovino - Gir Mocha</option>
-              <option<? if($place[type] == "hereford" {?> selected="selected"<? } ?>>Bovino - Hereford</option>
-              <option<? if($place[type] == "holstein-frisia" {?> selected="selected"<? } ?>>Bovino - Holstein-Frisia</option>
-              <option<? if($place[type] == "jersey" {?> selected="selected"<? } ?>>Bovino - Jersey</option>
-              <option<? if($place[type] == "limousin" {?> selected="selected"<? } ?>>Bovino - Limousin</option>
-              <option<? if($place[type] == "marchigiana" {?> selected="selected"<? } ?>>Bovino - Marchigiana</option>
-              <option<? if($place[type] == "nelore" {?> selected="selected"<? } ?>>Bovino - Nelore</option>
+		      <option<? if($place[type] == "Bovino - Aberdeen Angus" {?> selected="selected"<? } ?>>Bovino - Aberdeen Angus</option>
+              <option<? if($place[type] == "Bovino - Ankole-Watusi" {?> selected="selected"<? } ?>>Bovino - Ankole-Watusi</option>
+              <option<? if($place[type] == "Bovino - Belted Galloway" {?> selected="selected"<? } ?>>Bovino - Belted Galloway</option>
+              <option<? if($place[type] == "Bovino - Bonsmara" {?> selected="selected"<? } ?>>Bovino - Bonsmara</option>
+              <option<? if($place[type] == "Bovino - Brahman" {?> selected="selected"<? } ?>>Bovino - Brahman</option>
+              <option<? if($place[type] == "Bovino - Brangus" {?> selected="selected"<? } ?>>Bovino - Brangus</option>
+              <option<? if($place[type] == "Bovino - Brown Swiss" {?> selected="selected"<? } ?>>Bovino - Brown Swiss</option>
+              <option<? if($place[type] == "Bovino - Caracu" {?> selected="selected"<? } ?>>Bovino - Caracu</option>
+              <option<? if($place[type] == "Bovino - Charoles" {?> selected="selected"<? } ?>>Bovino - Charoles</option>
+              <option<? if($place[type] == "Bovino - Devon" {?> selected="selected"<? } ?>>Bovino - Devon</option>
+              <option<? if($place[type] == "Bovino - Gir Mocha" {?> selected="selected"<? } ?>>Bovino - Gir Mocha</option>
+              <option<? if($place[type] == "Bovino - Hereford" {?> selected="selected"<? } ?>>Bovino - Hereford</option>
+              <option<? if($place[type] == "Bovino - Holstein-Frisia" {?> selected="selected"<? } ?>>Bovino - Holstein-Frisia</option>
+              <option<? if($place[type] == "Bovino - Jersey" {?> selected="selected"<? } ?>>Bovino - Jersey</option>
+              <option<? if($place[type] == "Bovino - Limousin" {?> selected="selected"<? } ?>>Bovino - Limousin</option>
+              <option<? if($place[type] == "Bovino - Marchigiana" {?> selected="selected"<? } ?>>Bovino - Marchigiana</option>
+              <option<? if($place[type] == "Bovino - Nelore" {?> selected="selected"<? } ?>>Bovino - Nelore</option>
               <option<? if($place[type] == "red-angus" {?> selected="selected"<? } ?>>Bovino - Red Angus</option>
               <option<? if($place[type] == "senepol" {?> selected="selected"<? } ?>>Bovino - Senepol</option>
               <option<? if($place[type] == "shorthorn" {?> selected="selected"<? } ?>>Bovino - Shorthorn</option>

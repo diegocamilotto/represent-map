@@ -733,6 +733,7 @@ sua ajuda para mantê-lo sempre atualizado, se você não encontrar a sua empres
                   <option value="touabire">Ovino - Touabire</option>
                   <option value="uda">Ovino - Uda</option>
                   <option value="west-african-dwarf">Ovino - West African Dwarf</option>
+				  <option value="white-dorper">Ovino - White Dorper</option>
                   <option value="alpina">Caprino - Alpina</option> 
                   <option value="anglo-nubiana">Caprino - Anglo-nubiana</option> 
                   <option value="angora">Caprino - Angorá</option> 
