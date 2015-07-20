@@ -61,20 +61,6 @@ if($task == "doedit") {
        <div class="controls">
 -        <select class="input input-xlarge" name="type">
               <option<? if($place[type] == "saanen" {?> selected="selected"<? } ?>>Caprino - Saanen</option>
-              <option<? if($place[type] == "anglo-nubiana" {?> selected="selected"<? } ?>>Caprino - Anglo-nubiana</option>
-              <option<? if($place[type] == "angora" {?> selected="selected"<? } ?>>Caprino - Angorá</option>
-              <option<? if($place[type] == "bhuj" {?> selected="selected"<? } ?>>Caprino - Bhuj</option>
-              <option<? if($place[type] == "boer" {?> selected="selected"<? } ?>>Caprino - Boer</option>
-              <option<? if($place[type] == "caninde" {?> selected="selected"<? } ?>>Caprino - Canindé</option>
-              <option<? if($place[type] == "jamnapari" {?> selected="selected"<? } ?>>Caprino - Jamnapari</option>
-              <option<? if($place[type] == "la-mancha-americana" {?> selected="selected"<? } ?>>'Caprino - La Mancha Americana</option>
-              <option<? if($place[type] == "mambrina" {?> selected="selected"<? } ?>>Caprino - Mambrina</option>
-              <option<? if($place[type] == "marota" {?> selected="selected"<? } ?>>Caprino - Marota</option>
-              <option<? if($place[type] == "moxoto" {?> selected="selected"<? } ?>>Caprino - Moxotó</option>
-              <option<? if($place[type] == "murciana" {?> selected="selected"<? } ?>>Caprino - Murciana</option>
-              <option<? if($place[type] == "nubiana" {?> selected="selected"<? } ?>>Caprino - Nubiana</option>
-              <option<? if($place[type] == "repartida" {?> selected="selected"<? } ?>>Caprino - Repartida</option>
-              <option<? if($place[type] == "toggenburg" {?> selected="selected"<? } ?>>Caprino - Toggenburg</option>
 -        </select>
       </div>
     </div>
