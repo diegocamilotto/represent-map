@@ -60,7 +60,7 @@ if($task == "doedit") {
        <label class="control-label" for="">Type</label>
        <div class="controls">
 -        <select class="input input-xlarge" name="type">
-              <option<? if($place[type] == "alpina" {?> selected="selected"<? } ?>>Caprino - Alpina</option>
+              <option<? if($place[type] == "saanen" {?> selected="selected"<? } ?>>Caprino - Saanen</option>
               <option<? if($place[type] == "anglo-nubiana" {?> selected="selected"<? } ?>>Caprino - Anglo-nubiana</option>
               <option<? if($place[type] == "angora" {?> selected="selected"<? } ?>>Caprino - Angorá</option>
               <option<? if($place[type] == "bhuj" {?> selected="selected"<? } ?>>Caprino - Bhuj</option>
@@ -74,7 +74,6 @@ if($task == "doedit") {
               <option<? if($place[type] == "murciana" {?> selected="selected"<? } ?>>Caprino - Murciana</option>
               <option<? if($place[type] == "nubiana" {?> selected="selected"<? } ?>>Caprino - Nubiana</option>
               <option<? if($place[type] == "repartida" {?> selected="selected"<? } ?>>Caprino - Repartida</option>
-              <option<? if($place[type] == "saanen" {?> selected="selected"<? } ?>>Caprino - Saanen</option>
               <option<? if($place[type] == "toggenburg" {?> selected="selected"<? } ?>>Caprino - Toggenburg</option>
 -        </select>
       </div>
