@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
 include_once "header.php";
 
 // This is used to submit new markers for review.
@@ -14,7 +14,7 @@ $description = mysql_real_escape_string(parseInput($_POST['description']));
 
 // validate fields
 if(empty($title) || empty($type) || empty($address) || empty($owner_name) || empty($owner_email)) {
-  echo "Ups, preencha os campos Seu Nome, Seu email, Nome da Empresa/Propriedade, Raça e Endereço - por favor tente de novo.";
+  echo "Ups, preencha os campos Seu Nome, Seu email, Nome da Empresa/Propriedade, RaÃ§a, EndereÃ§o - Por favor tente de novo.";
   exit;
   
 } else {

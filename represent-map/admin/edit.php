@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 include "header.php";
 
 
@@ -60,7 +60,7 @@ if($task == "doedit") {
        <label class="control-label" for="">Type</label>
        <div class="controls">
 -        <select class="input input-xlarge" name="type">
-	      <option<? if($place[type] == "aberdeen-angus") {?> selected="selected"<? } ?>>Bovino - Aberdeen Angus</option>
+	          <option<? if($place[type] == "aberdeen-angus") {?> selected="selected"<? } ?>>Bovino - Aberdeen Angus</option>
               <option<? if($place[type] == "ankole-watusi") {?> selected="selected"<? } ?>>Bovino - Ankole-Watusi</option>
               <option<? if($place[type] == "belted-galloway") {?> selected="selected"<? } ?>>Bovino - Belted Galloway</option>
               <option<? if($place[type] == "bonsmara") {?> selected="selected"<? } ?>>Bovino - Bonsmara</option>

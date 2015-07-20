@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 if(!file_exists('include/db.php')) require_once('installer.php');
 include_once "header.php";
 ?>
@@ -758,7 +758,7 @@ sua ajuda para mantê-lo sempre atualizado, se você não encontrar a sua empres
               <div class="controls">
                 <input type="text" class="input-xlarge" name="address" id="add_address">
                 <p class="help-block">
-                 Deve ser seu <b> endereço completo (incluindo cidade e codigo postal)</ b>.
+                 Deve ser seu <b> endereço completo (incluindo cidade e código postal)</ b>.
                    Teste no Google maps, se ele funciona lá, certamente vai funcionar aqui ;)
                 </p>
               </div>
@@ -826,8 +826,7 @@ sua ajuda para mantê-lo sempre atualizado, se você não encontrar a sua empres
         );
       });
     </script>
-
-    
+   
 
   </body>
 </html>
