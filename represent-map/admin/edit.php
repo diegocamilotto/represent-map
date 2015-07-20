@@ -60,7 +60,7 @@ if($task == "doedit") {
       <label class="control-label" for="">Type</label>
       <div class="controls">
         <select class="input input-xlarge" name="type">  
-		      <option<? if($place[type] == "Bovino - Aberdeen Angus" {?> selected="selected"<? } ?>>Bovino - Aberdeen Angus</option>
+//		      <option<? if($place[type] == "Bovino - Aberdeen Angus" {?> selected="selected"<? } ?>>Bovino - Aberdeen Angus</option>
     	</select>
       </div>
     </div>
