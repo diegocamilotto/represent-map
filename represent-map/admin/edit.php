@@ -60,7 +60,7 @@ if($task == "doedit") {
        <label class="control-label" for="">Type</label>
        <div class="controls">
 -        <select class="input input-xlarge" name="type">
--          <option<? if($place[type] == "startup") {?> selected="selected"<? } ?>>startup</option>
+-          <option<? if($place[type] == "nelore") {?> selected="selected"<? } ?>>Nelore</option>
 -          <option<? if($place[type] == "accelerator") {?> selected="selected"<? } ?>>accelerator</option>
 -          <option<? if($place[type] == "incubator") {?> selected="selected"<? } ?>>incubator</option>
 -          <option<? if($place[type] == "coworking") {?> selected="selected"<? } ?>>coworking</option>
