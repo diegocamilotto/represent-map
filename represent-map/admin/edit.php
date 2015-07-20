@@ -56,12 +56,18 @@ if($task == "doedit") {
         <input type="text" class="input input-xlarge" name="title" value="<?=$place[title]?>" id="">
       </div>
     </div>
-    <div class="control-group">
-      <label class="control-label" for="">Type</label>
-      <div class="controls">
-        <select class="input input-xlarge" name="type">  
-//		      <option<? if($place[type] == "Bovino - Aberdeen Angus" {?> selected="selected"<? } ?>>Bovino - Aberdeen Angus</option>
-    	</select>
+     <div class="control-group">
+       <label class="control-label" for="">Type</label>
+       <div class="controls">
+-        <select class="input input-xlarge" name="type">
+-          <option<? if($place[type] == "startup") {?> selected="selected"<? } ?>>startup</option>
+-          <option<? if($place[type] == "accelerator") {?> selected="selected"<? } ?>>accelerator</option>
+-          <option<? if($place[type] == "incubator") {?> selected="selected"<? } ?>>incubator</option>
+-          <option<? if($place[type] == "coworking") {?> selected="selected"<? } ?>>coworking</option>
+-          <option<? if($place[type] == "investor") {?> selected="selected"<? } ?>>investor</option>
+-          <option<? if($place[type] == "service") {?> selected="selected"<? } ?>>service</option>
+-          <option<? if($place[type] == "hackerspace") {?> selected="selected"<? } ?>>hackerspace</option>
+-        </select>
       </div>
     </div>
     <div class="control-group">
