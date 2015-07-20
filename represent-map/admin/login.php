@@ -1,4 +1,4 @@
-<?
+﻿<?
 $page = "login";
 include "header.php";
 

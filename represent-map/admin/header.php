@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 include "../include/db.php";
 // get task
 if(isset($_GET['task'])) { $task = $_GET['task']; } 
