@@ -48,7 +48,7 @@ if(empty($title) || empty($type) || empty($address) || empty($owner_name) || emp
     $hide_geocode_output = true;
     include "geocode.php";
     
-    echo "success";
+    echo "Perfeito. Por favor aguarde alguns instantes enquanto analisamos se está tudo ok com seu cadastro. Em breve você aparecerá no mapa.";
     exit;
   
   }
