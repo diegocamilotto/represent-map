@@ -676,6 +676,7 @@ sua ajuda para mantê-lo sempre atualizado, se você não encontrar a sua empres
                   <option value="ankole-watusi">Bovino - Ankole-Watusi</option>
                   <option value="belted-galloway">Bovino - Belted Galloway</option>
                   <option value="bonsmara">Bovino - Bonsmara</option>
+                  <option value="blonde-daquitaine">Bovino - Blonde dAquitaine</option>				  
                   <option value="brahman">Bovino - Brahman</option>
                   <option value="brangus">Bovino - Brangus</option>
                   <option value="brown-swiss">Bovino - Brown Swiss</option>
