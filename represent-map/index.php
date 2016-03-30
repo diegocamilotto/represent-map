@@ -780,7 +780,7 @@ sua ajuda para mantê-lo sempre atualizado, se você não encontrar a sua empres
               <div class="controls">
                 <input type="text" class="input-xlarge" id="add_description" name="description" maxlength="250">
                 <p class="help-block">
-                  Olá, conte um pouco mais sobre você. Quais raças você cria? Qual o tamanho do seu rebanho? Você tem página no facebook? Possui site? Max 250 caracteres.
+                  Olá, conte um pouco mais sobre você. Quais raças você cria? Qual o tamanho do seu rebanho? Max 250 caracteres.
                 </p>
               </div>
             </div>
